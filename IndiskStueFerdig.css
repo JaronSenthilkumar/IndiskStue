@@ -1,0 +1,470 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+.Startside{
+    width: 100%;
+    background-color: rgb(241, 224, 202);
+}
+
+/* Styler header */
+
+header{
+
+    /*display: flex;*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 2%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 0%;
+
+}
+
+/* Styler Navbaren */
+
+.Overskrift{
+    background-color: rgb(238, 179, 102);
+
+
+}
+
+/* Styler innholdet i Navbaren */
+
+.Overskrift-innhold h1 a{
+    text-decoration: none;
+    color: black;
+}
+
+/*Kjernen*/
+
+.Kjernen{
+    align-content: center;
+    margin-top: 10%;
+    text-align: center;
+}
+
+
+
+.Navbar{
+
+    height: 100%; 
+    width: 13%; 
+    position: fixed; 
+    background-color: rgb(238, 179, 102,0.5);
+    margin-top: 5%;
+    padding: 10px;
+    font-size: 20px;
+    
+    
+
+}
+
+.Navbar ul{
+    text-align: justify;
+    list-style: none;
+    font-weight: bold;
+}
+
+.Navbar a{
+    margin-top: 50%;
+    margin-left: 22%;
+    padding-top: 15px;
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-weight: bold;
+  }
+
+ 
+
+
+/*Kommenterer ut CSS for Meny-bar øverst til høyre */
+
+.Meny-bar{
+    scroll-behavior: smooth;
+
+}
+
+.Meny-bar ul{
+    list-style: none;
+    text-align: center;
+    
+}
+
+.Meny-bar ul li{
+    display: inline-block;
+    padding: 0px 20px;
+    z-index: 900;
+}
+
+
+
+.Meny-bar ul li a{
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bolder;
+    color: black;
+    transition: all 0.3s ease 0s;
+    z-index: 900;
+}
+
+/* En liten HOVER animasjon på nav baren */
+
+.Meny-bar ul li a:hover{
+    text-decoration: underline;
+    font-size: 23px;
+}
+
+.Navbar ul li a:hover{
+    color: rgb(230, 40, 40);
+    font-size: 21px;
+}
+
+
+/* MENY FOR RESTAURANTEN */
+
+.Meny{
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.Velkommen{
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 14%;
+    margin-left: 30%;
+}
+
+.Forretter{
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 100px;
+    font-size: 24px;
+    padding-bottom: 15%;
+
+}
+
+h3{
+    font-size: 40px;     /* Tabelloverskrift style */
+}
+
+th{
+    text-decoration: underline;
+    font-size: 24px;
+
+}
+
+
+
+.HovedretterTabell{ 
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 100px;
+    font-size: 24px;    
+    padding-bottom: 20%;
+}
+
+.DesserterTabell{
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 100px;
+    font-size: 24px;    
+    padding-bottom: 20%;
+}
+
+.DrikkeTabell{
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 100px;
+    font-size: 24px;    
+    
+}
+
+
+/* Om oss Style*/
+
+.Tekst{
+    align-content: center;
+    margin-top: 10%;
+    text-align: center;
+    padding: 10% 5%;
+
+}
+
+
+
+.button{
+    align-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 100px;
+    padding-bottom: 4%;
+
+}
+
+@media only screen and (min-width:2000px){
+
+    header h1{
+        font-size: 50px;
+    }
+    
+    .Meny-bar ul li a{
+        font-size: 40px;
+        padding: 0px 40px;
+    }
+
+
+
+    .Navbar{
+        font-size: 35px;
+    }
+
+    .Navbar ul li a:hover{
+        color: rgb(230, 40, 40);
+        font-size: 37px;
+    }
+
+    h3{
+        font-size: 50px;
+    }
+
+    th{
+        font-size: 40px;
+    }
+
+    .Forretter{
+        font-size: 37px;
+    }
+
+    .HovedretterTabell{
+        font-size: 37px;
+    }
+
+    .DesserterTabell{
+        font-size: 37px;
+    }
+
+    .DrikkeTabell{
+        font-size: 37px;
+    }
+
+}
+
+
+
+@media only screen and (max-width:1387px){
+
+   /* .Velkommen{
+        margin-top: 20%;
+    }*/
+
+    .Meny{
+        margin-top: 4%;
+    }
+
+    .Meny-bar ul{
+        text-align: right;
+    }
+
+    .Navbar{
+        width: 15%;
+    } 
+
+    .Navbar a{
+    margin-top: 50%;
+    margin-left: 7%;
+    }
+
+    .Navbar ul li a{
+        font-size: 98%;
+    }
+
+    .Kjernen{
+        padding: 1px;
+    }
+
+}
+
+.Navbar ul li a:hover{
+    color: rgb(230, 40, 40);
+}
+
+
+@media only screen and (max-width: 1049px){
+
+    /*.Velkommen{
+        margin-top: 30%;
+    }*/
+
+    .Meny{
+        margin-top: 10%;
+    }
+
+    .Navbar{
+        width: 16%;
+    }
+}
+
+    .Navbar ul li a{
+        font-size: 100%;
+        font-weight: 900;
+}
+
+.Navbar ul li a:hover{
+    color: rgb(230, 40, 40);
+}
+
+
+@media only screen and (max-width:855px){
+
+  
+    .Meny{
+        margin-top: 10%;
+    }
+
+    .Meny-bar ul{
+        text-align: right;
+    }
+
+    .Navbar{
+        width: 23%;
+        margin-top: 10%;
+
+    } 
+
+    .Navbar a{
+    margin-top: 30%;
+    margin-left: 7%;
+    }
+
+    .Navbar ul li a{
+        font-size: 100%;
+        font-weight: 900;
+    }
+
+    .Kjernen{
+        padding: 1px;
+    }
+
+    .Tekst{
+        align-content: center;
+        margin-top: 16%;
+        text-align: center;
+        padding: 10% 5%;
+    
+    }
+
+}
+
+.Navbar ul li a:hover{
+    color: rgb(230, 40, 40);
+}
+
+
+@media only screen and (max-width: 525px){
+
+    .Startside{
+        width: 100%;
+    }
+
+
+    .Meny-bar{
+        font-weight: 800;
+    }
+
+   
+
+    .Meny-bar ul{
+        text-align: right;
+        margin-right: auto;
+    }
+
+    .Navbar{
+        width: 30%;
+        margin-top: 15%;
+        margin-right: 2%;
+    } 
+
+    .Navbar a{
+    margin-top: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    .Navbar ul li a{
+        font-size: 100%;
+        font-weight: 900;
+    }
+
+   .Paragraf{
+       margin-left: 70%;
+   }
+
+
+    .Kjernen{
+        margin-top: 30%;
+        margin-right: 80%;
+    }
+
+    .Navbar ul li a:hover{
+        color: rgb(230, 40, 40);
+    }
+
+    .Forretter{
+        margin-left: 3%;
+        margin-right: auto;
+        border-spacing: 60px;
+    
+    }
+    
+    .HovedretterTabell{ 
+        margin-left: auto;
+        margin-right: auto;
+        border-spacing: 60px;
+    }
+    
+    .DesserterTabell{
+        margin-left: auto;
+        margin-right: auto;
+        border-spacing: 40px;
+    }
+    
+    .DrikkeTabell{
+        margin-left: auto;
+        margin-right: auto;
+        border-spacing: 40px;
+    }
+    .Tekst{
+        align-content: center;
+        margin-top: 20%;
+        text-align: center;
+        padding: 10% 5%;
+    
+    }
+    
+    
+
+
+}
+
+@media only screen and (max-width: 420px){
+
+    .Navbar{
+        margin-top: 17%;
+    }
+}
+
+
+
